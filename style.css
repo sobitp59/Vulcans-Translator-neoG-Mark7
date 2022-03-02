@@ -6,8 +6,8 @@
     font-family: 'Fredoka One', cursive;
 }
 :root{
-    --primary-color : #fab005;
-    --secondary-color : #112240;
+    --primary-color : #ff3347;
+    --secondary-color : #0C120C;
 }
 .container{
     width: 100%;
@@ -15,16 +15,16 @@
 }
 .top{
     width: 100%;
-    background-color: #112240;
+    background-color: #0C120C;
     padding: 1.3rem;
     border-bottom-left-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 3px solid #ff3347;
    
 }
 
 .top-title{
-    color: var(--primary-color);
+    color:#ff3347;
     text-align: center;
     font-weight: 100;
     font-size: 2rem;
@@ -85,7 +85,7 @@ color: #ffff;
 }
 
 .btn-translate:hover{
-  background-color: #fab005d8;
+  background-color: #ff3347;
   transition: 0.3s ease all;
 }
 
@@ -112,7 +112,7 @@ color: #ffff;
     padding: 1rem 0;
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
-    border-top: 3px solid var(--primary-color);
+    border-top: 3px solid #ff3347;
 }
 
 .bottom-para{
