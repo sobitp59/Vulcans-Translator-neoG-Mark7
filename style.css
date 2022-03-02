@@ -87,6 +87,7 @@ color: #ffff;
 .btn-translate:hover{
   background-color: #ff3347;
   transition: 0.3s ease all;
+  /* border : 3px solid blue; */
 }
 
 .output-area{
@@ -118,6 +119,24 @@ color: #ffff;
 .bottom-para{
     font-size: 1.1rem;
     margin-top: 0.5rem;
+}
+
+.social{
+    width : 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social a{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.social a:hover{
+    color: var(--primary-color);
 }
 
 /* Responsive */
@@ -153,6 +172,10 @@ color: #ffff;
         font-size: 0.9rem;
         margin-top: 0.5rem;
     
+    }
+
+    .social{
+        width: 80%;
     }
 
 
