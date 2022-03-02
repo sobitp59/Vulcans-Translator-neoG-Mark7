@@ -37,6 +37,14 @@
     font-size: 1.7rem;
 }
 
+.top-scan-one .fa-dog{
+    transform: rotateY(180deg);
+}
+
+.fa-dog:hover{
+    color:#ff3347;
+}
+
 .top-scan{
 color: #ffff;
 }
@@ -82,6 +90,10 @@ color: #ffff;
     border-bottom: 5px solid var(--secondary-color);
     border-radius: 0.9rem;
     font-size: 1.5rem;
+}
+
+.btn-translate span{
+    font-size: 1.7rem;
 }
 
 .btn-translate:hover{
