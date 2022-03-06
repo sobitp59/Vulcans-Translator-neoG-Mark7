@@ -3,25 +3,18 @@ const input = document.querySelector('.input');
 const output = document.querySelector('.output');
 
 
-
-
 btn.addEventListener('click', function(){
-
-//    btn.style.border = "0.3rem solid rgb(255, 207, 207)"; 
-//    btn.style.box-sizing = "border-box";
 
    recognition.start();
    console.log('start')
    
    
    recognition.onresult = function(event){
-       const current = event.resultIndex;
-       const transcriptInput = event.results[current][0].transcript;
-       input.textContent = transcriptInput;
-       
-       
-       
-    
+
+    const current = event.resultIndex;
+    const transcriptInput = event.results[current][0].transcript;
+    input.textContent = transcriptInput;
+     
     const url = 'https://api.funtranslations.com/translate/vulcan.json';
 
     function serverUrl(text){
@@ -46,11 +39,7 @@ btn.addEventListener('click', function(){
     }
 translated();
 }   
-})
-
-
-
-//-------------------- SPEECH -----------------------//
+});
 
 // Speech Recognition
 var SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
@@ -66,4 +55,3 @@ function readOutLoud(message){
     speech.pitch = 1;
     window.speechSynthesis.speak(speech);
 }
-// ---------------------- SPEECH ---------------------------//
