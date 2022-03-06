@@ -6,6 +6,10 @@ const output = document.querySelector('.output');
 
 
 btn.addEventListener('click', function(){
+
+//    btn.style.border = "0.3rem solid rgb(255, 207, 207)"; 
+//    btn.style.box-sizing = "border-box";
+
    recognition.start();
    console.log('start')
    
@@ -25,7 +29,7 @@ btn.addEventListener('click', function(){
     }
 
     function errorHandler(error){
-        alert(`something wrong with the server! Try again after sometime. ${error.message}`);
+        alert(`Sorry! We have a mission, will talk to you later. Okay!`);
     }
     
     const translated = () => {
@@ -60,8 +64,6 @@ function readOutLoud(message){
     speech.volume = 1;
     speech.rate = 1;
     speech.pitch = 1;
-
-
     window.speechSynthesis.speak(speech);
 }
 // ---------------------- SPEECH ---------------------------//
