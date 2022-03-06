@@ -20,7 +20,7 @@ function readOutLoud(message){
 btn.addEventListener('click', function(){
     btn.style.background = 'none';
     btn.style.color = 'rgb(249,41,65)';
-
+    
    recognition.start();
    console.log('start')
    
