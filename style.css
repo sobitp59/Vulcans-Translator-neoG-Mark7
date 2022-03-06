@@ -60,6 +60,7 @@ body{
 
 .mid-p{
     color: rgb(255, 35, 60);
+    /* width: 90%; */
     margin-top: 1.6rem;
     margin-bottom: 0;
     background-color: rgba(255, 207, 207, 0.363);
@@ -141,6 +142,10 @@ body{
     }
     
     .middle .output{
+        width: 93%;
+    }
+
+    .mid-p{
         width: 93%;
     }
 
